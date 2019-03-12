@@ -22,9 +22,11 @@ public class Encrypting {
     }
 
     static String encryptAll(String str, int number) {
-        String str2;
-        for (int i = 0; i <= str.length(); i++) {
-            str2 = str.replace(str.charAt(i), encrypt(str.charAt(i), number));
+        String str2=str;
+        char selectChar;
+        for (int i = 0; i < str.length(); i++) {
+            selectChar=str.charAt(i);
+            str2 = str.replace(selectChar, encrypt(selectChar, number));
         }
         return str2;
     }
