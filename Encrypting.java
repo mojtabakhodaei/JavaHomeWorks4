@@ -26,6 +26,7 @@ public class Encrypting {
         char selectChar;
         for (int i = 0; i < str.length(); i++) {
             selectChar=str.charAt(i);
+            if(!(selectChar==' '))
             str2 = str.replace(selectChar, encrypt(selectChar, number));
         }
         return str2;
