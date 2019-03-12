@@ -14,7 +14,8 @@ public class Encrypting {
         System.out.println("Write your number for encrypt: ");
         number = scanner.nextInt();
     }
-    public char encrypt(char charactor, int codeNumber) {
+    static char encrypt(char charactor, int codeNumber) {
         return (char)((int) charactor+ codeNumber);
     }
+
 }
