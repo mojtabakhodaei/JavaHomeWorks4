@@ -16,4 +16,16 @@ public class Patient {
         this.age=age;
         this.bloodData=bloodData;
     }
+
+    public int getIdNumbrer() {
+        return idNumbrer;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public BloodData getBloodData() {
+        return bloodData;
+    }
 }
