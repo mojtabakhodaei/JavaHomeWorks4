@@ -5,5 +5,7 @@ public class Billing {
         return price * 1.08;
     }
 
-    
+    static double computeBill(int price, int quantity) {
+        return price * quantity * 1.08;
+    }
 }
