@@ -1,8 +1,8 @@
 package HomeWork4;
 
 public class BloodData {
-    String Bloodtype;
-    Boolean RHFactor;
+    private String Bloodtype;
+    private Boolean RHFactor;
 
     public BloodData() {
         this.Bloodtype = "O";
@@ -16,6 +16,7 @@ public class BloodData {
 
     public void setBloodtype(String bloodtype) {
         Bloodtype = bloodtype;
+
     }
 
     public String getBloodtype() {
