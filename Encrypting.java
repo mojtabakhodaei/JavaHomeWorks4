@@ -13,6 +13,8 @@ public class Encrypting {
         str = scanner.nextLine();
         System.out.println("Write your number for encrypt: ");
         number = scanner.nextInt();
+
+        encryptAll(str,number);
     }
 
     static char encrypt(char charactor, int codeNumber) {
