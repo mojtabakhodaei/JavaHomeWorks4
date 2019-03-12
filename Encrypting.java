@@ -17,8 +17,8 @@ public class Encrypting {
         System.out.println(encryptAll(str,number));
     }
 
-    static char encrypt(char charactor, int codeNumber) {
-        return (char) ((int) charactor + codeNumber);
+    static char encrypt(char character, int codeNumber) {
+        return (char) ((int) character + codeNumber);
     }
 
     static String encryptAll(String str, int number) {
