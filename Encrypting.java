@@ -14,7 +14,7 @@ public class Encrypting {
         System.out.println("Write your number for encrypt: ");
         number = scanner.nextInt();
 
-        encryptAll(str,number);
+        System.out.println(encryptAll(str,number));
     }
 
     static char encrypt(char charactor, int codeNumber) {
@@ -22,12 +22,13 @@ public class Encrypting {
     }
 
     static String encryptAll(String str, int number) {
-        String str2=str;
-        char selectChar;
+        String str2 = "";
         for (int i = 0; i < str.length(); i++) {
-            selectChar=str.charAt(i);
-            if(!(selectChar==' '))
-            str2 = str.replace(selectChar, encrypt(selectChar, number));
+            if(!(str.charAt(i)==' ')) {
+                str2 = str2 + encrypt(str.charAt(i) , number);
+            }else{
+                str2 = str2 + ' ';
+            }
         }
         return str2;
     }
