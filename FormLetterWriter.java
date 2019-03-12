@@ -9,4 +9,8 @@ public class FormLetterWriter {
         System.out.println("greeting Dear " + firstName + ' ' + lastName + "Thank you for your recent order");
     }
 
+    public static void main(String[] args) {
+        displaySalutation("khodaei");
+        displaySalutation("mojtaba" , "khodaei");
+    }
 }
