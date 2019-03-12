@@ -10,4 +10,10 @@ public class Patient {
         age = 0;
         bloodData = new BloodData();
     }
+
+    public Patient(int idNumbrer , int age , BloodData bloodData){
+        this.idNumbrer=idNumbrer;
+        this.age=age;
+        this.bloodData=bloodData;
+    }
 }
